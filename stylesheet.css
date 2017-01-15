@@ -1,0 +1,72 @@
+
+* {box-sizing: border-box;
+	position: relative;
+	margin:0px;
+	padding:0px;}
+
+	body {font-family: 'Nova Script', cursive;}
+
+
+h1 {text-align: center;
+	margin-bottom: 50px;
+text-decoration: underline;
+text-transform: uppercase;
+font-size: 175%;}
+p {width: 95%;
+	height:60%;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	text-align: center;
+}
+.row {width: 100%;
+position: relative;
+margin: 2px;}
+.col-lg-4 {background-color: green;
+border: 1px solid black;
+position: relative;
+overflow: auto;
+margin:6px;
+}
+
+.chicken {border: 1px solid black;
+float: right;
+width:30%;
+background-color:pink;
+text-align: center;
+position: relative;
+font-size: 125%;
+}
+.beef {border: 1px solid black;
+float: right;
+width:30%;
+background-color:red;
+text-align: center;
+font-size: 125%;}
+.sushi {border: 1px solid black;
+float:right;
+width:30%;
+background-color:violet;
+text-align: center;
+font-size: 125%;}
+
+
+/*Desktop view*/
+@media (min-width: 992px) {.col-lg-4{
+float: left;}
+.col-lg-4  {width: 32%;
+	height:150px;}}
+
+/*Tablet view*/
+@media (min-width:768px) and (max-width:991px) {.col-md-6,.col-md-12{float: left;}
+.col-md-6 {width: 45%;
+height:150px;}
+.col-md-12 {width: 100%;
+	height: 150px;}}
+
+/*Mobile device*/
+@media (max-width:767px) {.col-sm-12 {
+float: left;}
+.col-sm-12 {width: 100%;
+	height: 150px;}}
